@@ -70,8 +70,11 @@
     }
 
     .dropdown-menu {
-      position: static;
 
+      @media screen and (max-width: 921px) {
+        position: static;
+        margin-left: 0.6em;
+      }
     }
   }
 
