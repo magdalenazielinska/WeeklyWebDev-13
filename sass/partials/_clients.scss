@@ -1,0 +1,52 @@
+/* ===== Clients ===== */
+
+.clients {
+  background-color: $main-color;
+  color: $main-text-color;
+  margin-bottom: 3em;
+
+  .clients_quote {
+    margin-left: 20px;
+  }
+
+  .clients_say {
+    color: $second-text-color;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-style: italic;
+    font-weight: 400;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+    padding: 3em 1.5em;
+    margin-top: -30px;
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  .clients_photo {
+    text-align: center;
+    margin-top: -45px;
+  }
+
+  .clients_name {
+    text-align: center;
+    font-family: 'Damion';
+    color: $violet;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 0.75em;
+    margin-top: 0.3em;
+  }
+
+  .clients_website {
+    text-align: center;
+    font-family: 'Damion';
+    margin-bottom: 2em;
+    color: $blue;
+    font-size: $text-font-size;
+    font-weight: 400;
+    line-height: 1em;
+  }
+
+}

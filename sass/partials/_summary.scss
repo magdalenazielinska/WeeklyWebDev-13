@@ -1,0 +1,26 @@
+/* ===== Summary ===== */
+
+.summary {
+  background-color: $darkgreen;
+  background-image: url("../images/summary.png");
+  background-size: cover;
+  background-position: center;
+
+  .row {
+    margin-bottom: 3rem;
+
+    .summary_text {
+      margin-top: 12rem;
+      font-size: $h3-font-size;
+      font-weight: 400;
+      line-height: $h3-font-size;
+    }
+
+    .summary_button {
+      margin-bottom: 9rem;
+      background-color: $orange;
+      @include button;
+      @include bigbutton;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+/* ===== Offer ===== */
+
+.offer {
+  background-color: $offer-background-color;
+  color: $main-text-color;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  margin-bottom: 3em;
+
+  .offer_pic {
+    display: inline-block;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.36);
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    line-height: 148px;
+  }
+
+  .offer_pic--coaching {
+    background-color: $violet;
+  }
+
+  .offer_pic--web {
+    background-color: $blue;
+  }
+
+  .offer--content {
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.19);
+    background-color: $main-color;
+    padding: 5em 1.5em 2em 1.5em;
+    margin-top: -70px;
+    margin-right: 1em;
+
+    .offer_heading {
+      font-weight: 500;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    .offer_heading--coaching {
+      color: $violet;
+    }
+
+    .offer_heading--webdev {
+      color: $blue;
+    }
+
+    .offer_descr {
+      font-size: 0.9em;
+      font-weight: 400;
+      line-height: 1.5em;
+      color: $second-text-color;
+    }
+
+    @media screen and (max-width: 991px) {
+    margin-right: 0;
+  }
+  }
+
+  .offer_button {
+    @include button;
+    @include smallbutton;
+    margin-top: -25px;
+    margin-bottom: 2em;
+  }
+
+  .offer_button--coaching {
+    background-color: $orange;
+  }
+
+  .offer_button--webdev {
+    background-color: $darkgreen;
+  }
+}

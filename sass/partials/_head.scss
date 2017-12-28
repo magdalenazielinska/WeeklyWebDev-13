@@ -1,0 +1,111 @@
+/* ===== Head ===== */
+
+.head {
+  background-color: $blue;
+  @include header-gradient;
+
+  .navbar {
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+
+    .navbar-toggle {
+      border: none;
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .nav {
+      margin-right: 4em;
+      margin-left: 4em;
+
+      .fa-bars {
+        font-size: 1.3em;
+        margin-left: 10px;
+      }
+
+      li {
+
+        a {
+          text-transform: uppercase;
+          font-size: 1em;
+          color: $main-color;
+          font-weight: 500;
+          line-height: 1.3em;
+
+          &:hover {
+            font-weight: 800;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background-color: transparent;
+
+        li {
+
+          a {
+            color: $main-color;
+            font-weight: 500;
+            line-height: 1.3em;
+            text-align: center;
+
+            &:hover {
+              background-color: transparent;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      border-color: $main-color;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .show {
+      border-color: $main-color;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+
+  .head_welcome {
+    margin-top: 100px;
+
+    h1 span {
+      font-size: 0.6em;
+    }
+
+    p {
+      margin-top: 1em;
+      margin-bottom: 2em;
+      font-size: $text-font-size;
+      font-weight: 500;
+      line-height: 1.3em;
+    }
+
+    a {
+      background-color: $violet;
+      @include button;
+      @include bigbutton;
+      margin-bottom: 2em;
+    }
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  .head_photo {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+}

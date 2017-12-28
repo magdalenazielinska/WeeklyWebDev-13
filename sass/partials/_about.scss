@@ -1,0 +1,62 @@
+/* ===== About ===== */
+
+.about {
+  background-color: $main-color;
+  color: $main-text-color;
+  padding-top: 3em;
+  margin-bottom: 3em;
+
+  .col-md-5 {
+    z-index: 1;
+
+    figure {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: 992px) {
+      padding-right: 0;
+    }
+  }
+
+  .col-md-7 {
+    ;
+    padding-top: 40px;
+
+
+    @media screen and (min-width: 992px) {
+      margin-left: -10px;
+      padding-left: 0
+    }
+  }
+
+  .about_story {
+    background-color: $offer-background-color;
+    color: $second-text-color;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 2em 1.5em 2em 2em;
+
+    p {
+      margin-bottom: 2em;
+
+      a {
+        color: $orange;
+        text-decoration: none;
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+}
